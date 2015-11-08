@@ -95,6 +95,7 @@ def set_weight(weight)
 
   pp data_set
   res = fit.patch_user_data_source_dataset("me", ds.data_stream_id, "#{unix_nano}-#{unix_nano}", data_set)
+  echo "--> Weight updated to #{weight}"
   pp res
 end
 
