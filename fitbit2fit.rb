@@ -100,7 +100,6 @@ def set_weight(weight)
 end
 
 begin
-  weight = curr_weight
   weight_kg = curr_weight * POUND_TO_KG
   set_weight(weight_kg)
 rescue Google::Apis::ClientError => e
