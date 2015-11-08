@@ -101,8 +101,7 @@ end
 begin
   weight = curr_weight
   weight_kg = curr_weight * POUND_TO_KG
-  p weight_kg
-#  set_weight(weight_kg)
+  set_weight(weight_kg)
 rescue Google::Apis::ClientError => e
   puts e
   puts e.body
